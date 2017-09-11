@@ -18,7 +18,17 @@ $ ls<ENTER>
 Copy and paste the output of ls below.
 ----------
 
-
+student$ ls
+-p			Movies			isus
+Adlm			Music			more-stuff
+Adobe			New Unity Project	mtec1002-lab-02
+Applications		Pictures		mtec1002-lab-02.zip
+Desktop			Public			pizza
+Documents		QLData			pymel.log
+Downloads		Things			stuff
+Library			__MACOSX		test
+MPLABXProjects		foureyes.tar.gz		xgen
+MTEC2230		ipe.properties
 
 ==========
 2a. Type: 
@@ -28,13 +38,14 @@ $ ls D<TAB>
 What happens?  Describe it below.
 ----------
 
-
+nothing
 
 ==========
 2b. Press <TAB> one more time.  Copy and paste the output below.
 ----------
 
-
+ls D
+Desktop/   Documents/ Downloads/ 
 
 ==========
 2c. Now press <ENTER>. Copy and paste the output below.
@@ -50,7 +61,9 @@ $ ls -l Documents<ENTER>
 Copy and paste the first *two lines* of output below.
 ----------
 
-
+s -l Documents
+total 8
+drwxr-xr-x   7 student  staff   238 Aug  9 17:44 Ableton
 
 ==========
 4.  Type:
@@ -60,7 +73,9 @@ $ ls -a Documents
 Copy and paste the first *two lines* of output below.
 ----------
 
-
+tudent$ ls -a Documents
+.			Arduino			Pro Tools
+..			Avid Projects		Processing
 
 ==========
 5.  Type:
@@ -70,7 +85,7 @@ Copy and paste the first *two lines* of output below.
 What command was repeated?
 ----------
 
-
+ls
 
 ==========
 6.  Type:
@@ -80,6 +95,7 @@ What command was repeated?
 What command was repeated?
 ----------
 
+ls
 
 
 ==========
@@ -90,6 +106,8 @@ $ ls /Vol<TAB><ENTER>
 What is the result of pressing tab?
 ----------
 
+student$ ls /Volumes/
+Macintosh HD
 
 
 ==========
@@ -100,31 +118,32 @@ $ ls doesnotexist
 Copy and paste the output below.
 ----------
 
-
+ls doesnotexist
+ls: doesnotexist: No such file or directory
 
 ==========
 9.  What key do I press to go to the previous command?
 ----------
 
-
+up
 
 ==========
 10.  Name two flags that we used in this exercise.
 ----------
 
-
+ls, cd
 
 ==========
 11.  What key do I use to attempt to autocomplete a command or a file name?
 ----------
 
-
+tab
 
 ==========
 12.  What was the main command that we used throughout this exercise?
 ----------
 
-
+ls
 
 ==========
 13.  Name one argument that we passed to the command.
@@ -140,7 +159,8 @@ $ foo<ENTER>
 Copy and paste the output below.
 ----------
 
-
+foo
+-bash: foo: command not found
 
 ==========
 15.  Type:
@@ -150,7 +170,8 @@ Copy and paste the output below.
 Copy and paste the output below.
 ----------
 
-
+tudent$ foo
+-bash: foo: command not foun
 
 ==========
 16.  In the following line....
@@ -159,3 +180,8 @@ $ ls -a Desktop
 
 What is the command, flag, argument, and prompt?
 ----------
+ls -a Desktop
+.			Share 1 Read Only	Sound Effects Server
+..			Share 2 Read-Write	Student Temporary Work
+.DS_Store		Silhouette		even-more-stuff
+.localized		Silhouette.zip
