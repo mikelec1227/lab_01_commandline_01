@@ -43,6 +43,9 @@ $ ls
 Copy and paste the output below.
 ----------
 
+mtec1002 student$ mkdir animals
+ent-v314-005:mtec1002 student$ ls
+animals
 
 
 ==========
@@ -54,6 +57,9 @@ $ ls
 Copy and paste the output below.
 ----------
 
+tudent$ mkdir food
+ent-v314-005:mtec1002 student$ ls
+animals	food
 
 
 ==========
@@ -65,6 +71,9 @@ $ ls
 Copy and paste the output below.
 ----------
 
+tudent$ mkdir -p foo/bar/baz/qux
+ent-v314-005:mtec1002 student$ ls
+animals	foo	food
 
 
 ==========
@@ -76,7 +85,9 @@ $ pwd
 Copy and paste the output below.
 ----------
 
-
+tudent$ cd foo/bar/baz/qux
+ent-v314-005:qux student$ pwd
+/Users/student/mtec1002/foo/bar/baz/qux
 
 ==========
 9. Type:
@@ -87,7 +98,9 @@ $ pwd
 Copy and paste the output below.
 ----------
 
-
+ cd ../..
+ent-v314-005:bar student$ pwd
+/Users/student/mtec1002/foo/bar
 
 ==========
 10. Type:
@@ -98,7 +111,10 @@ $ pwd
 Copy and paste the output below.
 ----------
 
-
+d -
+/Users/student/mtec1002/foo/bar/baz/qux
+ent-v314-005:qux student$ pwd
+/Users/student/mtec1002/foo/bar/baz/qux
  
 ==========
 11. Type:
@@ -109,7 +125,9 @@ $ pwd
 Copy and paste the output below.
 ----------
 
-
+tudent$ cd ../../../..
+ent-v314-005:mtec1002 student$ pwd
+/Users/student/mtec1002
 
 ==========
 12. Type:
@@ -121,7 +139,9 @@ $ ls -l
 Copy and paste the first two lines from the output into the space below.
 ----------
 
-
+total 0
+drwxr-xr-x  3 student  staff  102 Sep 11 15:33 foo
+drwxr-xr-x  2 student  staff   68 Sep 11 15:32 food
 
 ==========
 13. Type:
@@ -132,6 +152,9 @@ $ pwd
 Copy and paste the output into the space below.
 ----------
 
+cd ~
+ent-v314-005:~ student$ pwd
+/Users/student
 
 
 ==========
@@ -143,6 +166,9 @@ $ pwd
 Copy and paste the output into the space below.
 ----------
 
+student$ cd /Volumes
+ent-v314-005:Volumes student$ pwd
+/Volumes
 
 
 ==========
@@ -154,6 +180,10 @@ $ pwd
 Copy and paste the output into the space below.
 ----------
 
+cd /unknown_folder
+-bash: cd: /unknown_folder: No such file or directory
+ent-v314-005:Volumes student$ pwd
+/Volumes
 
 
 ==========
@@ -165,6 +195,9 @@ $ pwd
 Copy and paste the output into the space below.
 ----------
 
+student$ cd ~/mtec1002
+ent-v314-005:mtec1002 student$ pwd
+/Users/student/mtec1002
 
 
 ==========
@@ -175,13 +208,15 @@ $ hostname
 Copy and paste the output into the space below.
 ----------
 
+student$ hostname
+ent-v314-005.local
 
 
 ==========
 17a. Make sure you're back in your mtec1002, which should be in your home folder.  What command would you use to find out if you're in the right folder?  Write the command below, then run it.
 ----------
 
-
+cd mtec1002
 
 ==========
 17b. If you're not in the right directory, type the following command:
@@ -204,7 +239,7 @@ lemon
 Use only one command to make all of these new directories.  Write what command you used below:
 ----------
 
-
+student$ mkdir -p pineapple/orange/strawberry/lemon
 
 ==========
 19. Make another directory called aardvark.  
@@ -212,7 +247,7 @@ Use only one command to make all of these new directories.  Write what command y
 Write the command you used to create the directory below:
 ----------
 
-
+mkdir aardvark
 
 ==========
 20. List the files and directories in the current directory using the long format.  
@@ -220,7 +255,8 @@ Write the command you used to create the directory below:
 What is the modified date of the aardvark directory?
 ----------
 
-
+ls
+aardvark	foo		food		pineapple
 
 ==========
 21. Make 3 directories nested within each other:
@@ -232,7 +268,7 @@ What is the modified date of the aardvark directory?
 What command did you use?
 ----------
 
-
+mkdir -p baz/bar/foo
 
 ==========
 22. Change your directory so that you're in the inner most directory (baz)
@@ -240,7 +276,7 @@ What command did you use?
 What command did you use?
 ----------
 
-
+cd baz
 
 ==========
 23. Change your directory so that you're two directories up (foo)
@@ -248,18 +284,18 @@ What command did you use?
 What command did you use?
 ----------
 
-
+cd foo
 ==========
 24. What command is used to delete empty directories?
 ----------
 
-
+rmdir
 
 ==========
 25. What command is used to print out your current working directory?
 ----------
 
-
+pushd
 
 ==========
 26. What flag do I pass to ls to print out all files?
@@ -271,20 +307,21 @@ What command did you use?
 27. What's the shortcut for home directory?
 ----------
 
-
+~
 
 ==========
 28. What's a pathname?
 ----------
 
-
+pathname
 
 ==========
 29. What's a directory?
 ----------
 
-
+dir
 
 ==========
 30. What's the *absolute* path (full path, starting at root) to your user's Downloads directory?
 ----------
+cd ~ Downloads
